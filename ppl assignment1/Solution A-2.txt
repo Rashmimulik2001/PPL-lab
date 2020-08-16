@@ -1,0 +1,53 @@
+---------------------------------------------
+A-2 Conditional Jumps and Control Flow Graphs
+---------------------------------------------
+
+        1   If-blocks have been broken down  into distinct sections of code with
+            labels  (named similar  to  temporary  variables). Control  transfer
+            occurs with unconditional jumps (e.g. "goto X") or conditional jumps
+            (e.g. "if Z then goto X else goto Y").
+
+        2   The control-flow  graph dump shows  distinct basic blocks  which are
+            named sequentially starting from  1. Basic blocks roughly correspond
+            to  labels that  are created  during the  gimplification of  control
+            statements.
+
+                f ()
+                {
+                  int c;
+                  int b;
+                  int a;
+                  int Z.0;
+                  int D.1715;
+
+                <yy 2>:
+                  a = Z;
+                  if (a <= 9)
+                    goto <bb 3>;
+                  else
+                    goto <bb 4>;
+
+                <yy 3>:
+                  b = 5;
+                  c = 17;
+                  goto <bb 6>;
+
+                <yy 4>:
+                  b = 6;
+                  c = 20;
+                  if (a == 0)
+                    goto <bb 5>;
+                  else
+                    goto <bb 6>;
+
+                <yy 5>:
+                  c = 0;
+
+                <yy 6>:
+                  D.1715 = b * 10;
+                  Z.0 = D.1715 + c;
+                  Z = Z.0;
+                  return;
+
+                }
+                  

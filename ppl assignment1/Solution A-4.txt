@@ -1,0 +1,23 @@
+-----------------------
+A-4 Arrays and Pointers
+-----------------------
+
+
+        1  - Just like  scalar initialization, it  is split from  the declaration
+            and  included in  the procedure  body.
+           
+           - In  the case  of arrays,  the initialization is split into  multiple statements that assign values
+            to  individual array  elements.
+
+           - This  is to  remain consistent  with GIMPLE's one operation per statement policy.
+
+            
+        2  - As GIMPLE  can perform only  one operation per statement,  it cannot read  and write 
+            to  array  locations at  the  same  time (as  array accesses  involve offset  calculation).
+
+           - Thus,  these are  split into  separate read and write statements by introducing a temporary.
+
+           
+        3   CLOBBER statements are used for  address-escaped variables. It is an
+            annotation  to  signify  that  the  scope  of  this  address-escaped
+            variable has ended.

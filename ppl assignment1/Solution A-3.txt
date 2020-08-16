@@ -1,0 +1,14 @@
+---------
+A-3 Loops
+---------
+
+
+        1 -  Basic blocks 2,  3 and 4 correspond to the  while-loop.
+
+          -  A while loop is  nothing but  a  set  of basic  blocks  with conditional  control            
+             transfer, the only  notable difference being a jump to  a block that
+             has been previously executed (i.e. a backward branch).
+
+        2  - A  for-loop  is only a  while-loop, with  the  initializer separated out  into an  initial basic  block,
+             the  body of  the loop subsequently, the  increment part at the  end of the loop  body, and              
+             the conditional jump back to the start of the loop.
