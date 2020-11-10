@@ -10,3 +10,4 @@ and see content of each file with editior such as vim,gedit or notepad and objdu
 #Assignment 7: DIfferent types of exceptions are handle in this assignment using python programming language.
 #Assignment 8: Paint Event is handle in this assignment using Tkinter module
 #Assignment 9: This assignment contains two programs written in LISP programming languge. First program is to find element from list present at nth position & Second program is to find factorial of number entered by user.
+#Assignment 10: This assigment contains database created using PROLOG programming languge for the information of student cource and department.
