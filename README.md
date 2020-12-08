@@ -11,3 +11,4 @@ and see content of each file with editior such as vim,gedit or notepad and objdu
 #Assignment 8: Paint Event is handle in this assignment using Tkinter module
 #Assignment 9: This assignment contains two programs written in LISP programming languge. First program is to find element from list present at nth position & Second program is to find factorial of number entered by user.
 #Assignment 10: This assigment contains database created using PROLOG programming languge for the information of student cource and department.
+#Assignment 4(using g++): Contains main.cpp file having code for swaping of two numbers using call by reference. Also its assembly code file generated using g++ -S command & machine code containing .o file generated using g++ -c command.
