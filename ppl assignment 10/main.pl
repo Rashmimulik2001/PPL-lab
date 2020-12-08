@@ -17,6 +17,21 @@ has_student(comp_dept,nikita).
 has_student(comp_dept,prasad).
 has_student(comp_dept,samrudhi).
 has_student(comp_dept,akash).
+has_student(comp_dept,sakshi).
+has_student(comp_dept,neha).
+has_student(comp_dept,pradeep).
+has_student(comp_dept,sanket).
+has_student(comp_dept,arjun).
+has_student(comp_dept,rani).
+has_student(comp_dept,nilam).
+has_student(comp_dept,rajesh).
+has_student(comp_dept,om).
+has_student(comp_dept,pallavi).
+has_student(comp_dept,aishwarya).
+has_student(comp_dept,deepa).
+has_student(comp_dept,pratiksha).
+has_student(comp_dept,pratik).
+has_student(comp_dept,srushti).
 
 has_enroll(ST,SB):-has_student(D,ST),has_subject(D,SB).
 has_faculty(D,F):-teaches_subject(F,S),has_subject(D,S).
